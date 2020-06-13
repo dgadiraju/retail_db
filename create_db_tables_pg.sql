@@ -59,7 +59,7 @@ CREATE TABLE order_items (
 
 CREATE TABLE orders (
   order_id int NOT NULL,
-  order_date date NOT NULL,
+  order_date timestamp NOT NULL,
   order_customer_id int NOT NULL,
   order_status varchar(45) NOT NULL,
   PRIMARY KEY (order_id)
