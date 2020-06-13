@@ -47,7 +47,7 @@ CREATE TABLE order_items (
   order_item_id int NOT NULL,
   order_item_order_id int NOT NULL,
   order_item_product_id int NOT NULL,
-  order_item_quantity tinyint(4) NOT NULL,
+  order_item_quantity int NOT NULL,
   order_item_subtotal float NOT NULL,
   order_item_product_price float NOT NULL,
   PRIMARY KEY (order_item_id)
@@ -59,7 +59,7 @@ CREATE TABLE order_items (
 
 CREATE TABLE orders (
   order_id int NOT NULL,
-  order_date datetime NOT NULL,
+  order_date date NOT NULL,
   order_customer_id int NOT NULL,
   order_status varchar(45) NOT NULL,
   PRIMARY KEY (order_id)
